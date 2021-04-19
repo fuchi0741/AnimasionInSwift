@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		C538B2BC262DE389008CE89D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2BB262DE389008CE89D /* AppDelegate.swift */; };
 		C538B2BE262DE389008CE89D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2BD262DE389008CE89D /* SceneDelegate.swift */; };
-		C538B2C0262DE389008CE89D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2BF262DE389008CE89D /* ViewController.swift */; };
+		C538B2C0262DE389008CE89D /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2BF262DE389008CE89D /* BasicViewController.swift */; };
 		C538B2C3262DE389008CE89D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C538B2C1262DE389008CE89D /* Main.storyboard */; };
 		C538B2C5262DE38B008CE89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C538B2C4262DE38B008CE89D /* Assets.xcassets */; };
 		C538B2C8262DE38B008CE89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C538B2C6262DE38B008CE89D /* LaunchScreen.storyboard */; };
 		C538B2D3262DE38B008CE89D /* AnimasionSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2D2262DE38B008CE89D /* AnimasionSwiftTests.swift */; };
 		C538B2DE262DE38B008CE89D /* AnimasionSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2DD262DE38B008CE89D /* AnimasionSwiftUITests.swift */; };
+		C538B2F6262DEA44008CE89D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B2F5262DEA44008CE89D /* AuthViewController.swift */; };
+		C538B302262DEC64008CE89D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B301262DEC64008CE89D /* Constants.swift */; };
+		C538B308262DECB3008CE89D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C538B307262DECB3008CE89D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		C538B2B8262DE389008CE89D /* AnimasionSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimasionSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C538B2BB262DE389008CE89D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C538B2BD262DE389008CE89D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C538B2BF262DE389008CE89D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C538B2BF262DE389008CE89D /* BasicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		C538B2C2262DE389008CE89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C538B2C4262DE38B008CE89D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C538B2C7262DE38B008CE89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		C538B2D9262DE38B008CE89D /* AnimasionSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimasionSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C538B2DD262DE38B008CE89D /* AnimasionSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimasionSwiftUITests.swift; sourceTree = "<group>"; };
 		C538B2DF262DE38B008CE89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C538B2F5262DEA44008CE89D /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		C538B301262DEC64008CE89D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C538B307262DECB3008CE89D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		C538B2BA262DE389008CE89D /* AnimasionSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C538B306262DECA8008CE89D /* AnimationManager */,
+				C538B2FD262DEC3C008CE89D /* Utilities */,
 				C538B2BB262DE389008CE89D /* AppDelegate.swift */,
 				C538B2BD262DE389008CE89D /* SceneDelegate.swift */,
-				C538B2BF262DE389008CE89D /* ViewController.swift */,
+				C538B2BF262DE389008CE89D /* BasicViewController.swift */,
+				C538B2F5262DEA44008CE89D /* AuthViewController.swift */,
 				C538B2C1262DE389008CE89D /* Main.storyboard */,
 				C538B2C4262DE38B008CE89D /* Assets.xcassets */,
 				C538B2C6262DE38B008CE89D /* LaunchScreen.storyboard */,
@@ -126,6 +135,22 @@
 				C538B2DF262DE38B008CE89D /* Info.plist */,
 			);
 			path = AnimasionSwiftUITests;
+			sourceTree = "<group>";
+		};
+		C538B2FD262DEC3C008CE89D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C538B301262DEC64008CE89D /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C538B306262DECA8008CE89D /* AnimationManager */ = {
+			isa = PBXGroup;
+			children = (
+				C538B307262DECB3008CE89D /* Extensions.swift */,
+			);
+			path = AnimationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C538B2C0262DE389008CE89D /* ViewController.swift in Sources */,
+				C538B302262DEC64008CE89D /* Constants.swift in Sources */,
+				C538B308262DECB3008CE89D /* Extensions.swift in Sources */,
+				C538B2F6262DEA44008CE89D /* AuthViewController.swift in Sources */,
+				C538B2C0262DE389008CE89D /* BasicViewController.swift in Sources */,
 				C538B2BC262DE389008CE89D /* AppDelegate.swift in Sources */,
 				C538B2BE262DE389008CE89D /* SceneDelegate.swift in Sources */,
 			);
