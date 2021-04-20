@@ -9,4 +9,5 @@ import Foundation
 
 struct Segues {
     static let toAuthVC = "toAuthVC"
+    static let toKeyframeSeg = "toKeyframeSeg"
 }

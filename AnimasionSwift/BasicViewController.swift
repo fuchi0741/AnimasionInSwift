@@ -15,9 +15,7 @@ final class BasicViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        titleLabel.alpha = 0
-        logoImageView.alpha = 0
-        loadingLabel.alpha = 0
+        setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,8 +24,14 @@ final class BasicViewController: UIViewController {
         animateLogo()
     }
     
+    private func setupUI() {
+        titleLabel.alpha = 0
+        logoImageView.alpha = 0
+        loadingLabel.alpha = 0
+    }
+    
     private func animateTitle() {
-        //1.5秒かけてクロージャ内が実行される
+        //1.5秒かけてクロージャ内が実行される 
         UIView.animate(withDuration: 1.5) {
             self.titleLabel.alpha = 1
             self.titleLabel.frame.origin.y -= 20
