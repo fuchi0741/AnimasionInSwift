@@ -95,8 +95,6 @@ final class AuthViewController: UIViewController {
             self.continueButton.center.y -= 25
         }
     }
-
-
     
     private func animateContinueButtonOnClick() {
         continueButton.center.y -= 20
