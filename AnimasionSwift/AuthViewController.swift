@@ -55,7 +55,7 @@ final class AuthViewController: UIViewController {
     
     @IBAction private func didTapContinueButton(_ sender: UIButton) {
         animateContinueButtonOnClick()
-        //TODO: 画面遷移
+        self.segueToNextViewController(segueID: Segues.toKeyframeSeg, delay: 0.1)
     }
     
     private func animateTitleLabel() {
